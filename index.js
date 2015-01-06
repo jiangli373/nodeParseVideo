@@ -8,7 +8,11 @@
 var youku = require('./core/youku.js');
 var iqiyi = require('./core/iqiyi.js');
 
-
+/**
+ *
+ * @param callback  第一个参数是回掉函数，必填
+ * @param url     视频地址，非必填，如果不填，运行时需要提供视频地址
+ */
 module.exports = function(callback,url){
 
     var _url = url || process.argv[2];
