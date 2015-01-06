@@ -1,0 +1,24 @@
+{
+  "name": "parseVideo",
+  "version": "1.0.0",
+  "description": "获取优酷和奇艺的视频下载地址",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com"
+  },
+  "keywords": [
+    "video",
+    "youku",
+    "iqiyi"
+  ],
+  "author": "jiangli",
+  "license": "MIT",
+  "dependencies": {
+    "iconv-lite": "^0.4.5",
+    "request": "^2.51.0"
+  }
+}
