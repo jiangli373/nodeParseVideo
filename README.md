@@ -45,3 +45,26 @@ nodeParseVideo
 分析优酷的下载地址可以参考[这篇文章](http://www.cnblogs.com/keygle/p/3829653.html)
 
 
+
+##2015 03 16 更新
+
+#### 增加了解析爱奇艺视频的mp4地址的方法
+
+#### 修改了调用方式
+
+    var video = require('./index');
+
+    video('http://www.iqiyi.com/v_19rrnbyreg.html','MP4',function(err,data){
+        console.log(data);
+    });
+
+
+第一个参数是视频地址（必填），第二参数是返回的视频格式（选填，只针对爱奇艺），第三个参数回掉函数（必填）
+
+
+ps:爱奇艺的mp4结果不是很稳定，有时解析出来的地址无法播放，解决办法只能多解析几次，这个是爱奇艺的问题，他的移动版就是这样，经常无法播放
+
+
+
+
+
