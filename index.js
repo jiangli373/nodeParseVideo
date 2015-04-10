@@ -7,7 +7,11 @@
 
 var youku = require('./lib/youku.js');
 var iqiyi = require('./lib/iqiyi.js');
-var iqiyimp4 = require('./lib/iqiyimp4.js');
+//var iqiyimp4 = require('./lib/iqiyimp4.js');
+
+var iqiyimp4 = require('./lib/anotheriqiyimp4.js');
+
+var souhu = require('./lib/souhu.js');
 
 /**
  * @param url     视频地址，，运行时需要提供视频地址  必填
@@ -54,6 +58,10 @@ module.exports = function(url,option,callback){
         }else{
             iqiyi(_url,callback);
         }
+
+    }else if(_url.indexOf('sohu.com')>0){
+
+        souhu(_url,callback);
 
     }else{
         callback('暂时只支持优酷和爱奇艺的视频地址');
